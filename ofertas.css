@@ -1,0 +1,187 @@
+/*CSS*/
+nav{
+	background:#273248;
+	padding:20px;
+	margin:-10px -8px 15px -10px;
+	font-family:"usuzi", times, serif;
+}
+		.Mayor{
+					display:inline-block;
+					color:#ffebd2;
+					text-decoration:none;
+					font-size:20px;
+					margin:-5px;
+		        }		
+		.orden{
+			display:flex;
+			justify-content:flex-end;
+		}
+				.bloque{
+					display:flex;
+					color:#ffebd2;
+					text-decoration:none;
+					margin-right:8px;
+					font-size:20px;
+					margin:-16px 10px 0px 0px;
+				}
+				.bloque:hover{
+					color:white;
+					font-size:30px;
+				}
+.destacado{
+	margin-top:10px;
+	border:3px solid black;
+}				
+		.Titulo-1{
+			font-family:"Alone On Earth", times, serif;
+			text-align:center;
+		}
+		.Texto-1{
+			text-align:center;
+					font-family:"Alone On Earth", times, serif;
+		}
+.cuadro{
+	margin-top:10px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}				
+		.Texto-1{
+			font-family:"Alone On Earth", times, serif;
+			text-align:center;
+}		
+.ofertas{
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		background:#273248;
+		border:3px solid black;
+		width:100%;
+		height:250px;
+		margin:15px 10px 15px 10px;
+		color:white;
+		border-radius:20px;
+		text-align:center;
+		font-family:"Alone On Earth", times, serif;
+		}
+		.decoration{
+			color:white;
+			text-decoration:none;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			display:block;
+			margin:15px 50px;
+		}
+			.ofertas:hover{
+				background:white;
+				color:black;
+				border:3px solid black;
+			}
+			.ofertas:active{
+				background:gray;
+				color:black;
+				border:3px solid black;
+			}
+.atras-siguiente{
+	display:flex;
+	justify-content:center;
+}				
+.pagina{
+	margin-top:10px;
+	margin-left:10px;
+	text-decoration:none;
+	color:blue;
+	font-size:20px;
+}
+footer{
+	background:#5d5e59;
+	padding:0px 5px 10px 15px;
+	margin:5px -5px -10px -25px;	
+}
+		.final{
+			text-align: center;
+			color:white;
+		}
+.sociales{
+		display:flex;
+		justify-content:center;
+	}			
+@media all and (max-width:760px){	
+	nav{
+		background:#273248;
+		padding:20px;
+		margin:-10px -8px 15px -10px;
+		font-family:"usuzi", times, serif;
+	}
+			.Mayor{
+						display:inline-block;
+						color:#ffebd2;
+						text-decoration:none;
+						font-size:15px;
+						margin:-4px;
+					}		
+			.orden{
+				display:flex;
+				justify-content:flex-end;
+			}
+					.bloque{
+						display:flex;
+						color:#ffebd2;
+						text-decoration:none;
+						margin-right:8px;
+						font-size:15px;
+						margin:-12px 10px 0px 0px;
+					}
+					.bloque:hover{
+						font-size:15px;
+					}
+@media all and (max-width:590px){
+	nav{
+	background:#273248;
+	padding:20px;
+	margin:10px 8px 15px 10px;
+	border-radius:15px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	font-family:"usuzi", times, serif;
+}
+		.Mayor{
+			color:#ffebd2;
+			text-decoration:none;
+			font-size:30px;
+		}
+			.orden{
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			font-family:"usuzi", times, serif;
+		}
+				.bloque{
+			background:white;
+			padding:5px 20px 5px 20px;
+			color:#273248;
+			text-decoration:none;
+			margin-top: 5px;
+			font-size:15px;
+			border: 2px solid black;
+		}
+		.bloque:hover{
+					color:#273248;
+					font-size:15px;
+				}
+				.detallado2{
+					padding:5px 13px 5px 13px;
+				}
+				.detallado3{
+					padding:5px 18px 5px 18px;
+				}
+				.detallado4{
+					padding:5px 40px 5px 40px;
+				}
+				.detallado5{
+					padding:5px 30px 5px 30px;
+				}
+}			
+}		
