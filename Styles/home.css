@@ -1,9 +1,116 @@
-/*CSS*/
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#Login {
+    height: 400px;
+    width: 400px;
+    background-color: #273248;
+	border-radius: 20px;
+}
+#Register {
+	height: 550px;
+	width: 400px;
+	background-color: #273248;
+	border-radius: 20px;
+}
+
+#paginaOculta {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff; /* Puedes cambiar el color de fondo si es necesario */
+    overflow-y: auto; /* Para permitir el desplazamiento si el contenido es largo */
+}
+
+.elegant-title {
+    color: aliceblue;
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.radioColor {
+	color: aliceblue;
+	font-family: 'Georgia', serif;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+.modern-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.modern-input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.button-container {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonSeccion {
+	margin: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.buttonSeccion:hover {
+    background-color: aliceblue;
+    color: #273248;
+    transform: scale(1.05);
+}
+/*Login//////////////////////////////*/
+p{
+	text-indent: 25px;
+}
+
+
 nav{
 	background:#273248;
 	padding:20px;
 	margin:-10px -8px 15px -10px;
 	font-family:"usuzi", times, serif;
+}
+figure {
+    text-align: center; /* Centrar la imagen y la leyenda */
+    margin: 20px; /* Margen alrededor del figure */
+}
+
+figcaption {
+    font-size: 14px; /* Tamaño de la letra de la leyenda */
+    color: #666; /* Color de la letra de la leyenda */
+    margin-top: 10px; /* Espacio entre la imagen y la leyenda */
 }
 		.Mayor{
 					display:inline-block;

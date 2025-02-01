@@ -1,42 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="Styles/home.css">
 <title>Compras Online</title> 
 </head>
 <body>
-	<nav>
-		<p class="Mayor">LOGO</p>
-			<div class="orden">
-				<a href="home.html" class="bloque detallado1">Inicio</a>
-				<a href="productos.html" class="bloque detallado2">Productos</a>
-				<a href="categorias.html" class="bloque detallado3">Categorías</a>
-				<a href="ofertas.html" class="bloque detallado4">Ofertas</a>
-				<a href="Contáctanos.html" class="bloque detallado5">Contáctanos</a>
+	<div class="container" id="loginContainer">
+        <div id="Login">
+            <div style="display: flex; flex-direction: column; align-items: center; margin-top: 50px;">
+                <h1 class="elegant-title">Iniciar Sección</h1>
+                <input class="modern-input" type="text" placeholder="Agrega tu nombre de usuario" id="Usuario">
+                <input class="modern-input" type="password" placeholder="Introduce tu contraseña" id="Password">
+                <div class="button-container">
+                    <a class="buttonSeccion" href="#" onclick="login()">Iniciar Sesión</a>
+                    <a class="buttonSeccion" href="#" onclick="showRegister()">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="registerContainer" style="display: none;">
+        <div id="Register">
+			<div style="display: flex; flex-direction: column; align-items: center;">
+				<h1 class="elegant-title">Registrarse</h1>
+				<input class="modern-input" type="text" placeholder="Agrega tu nombre de usuario" id="NewUsuario">
+				<input class="modern-input" type="password" placeholder="Introduce tu contraseña" id="NewPassword">
+				<input class="modern-input" type="text" placeholder="Introduce tu ubicación" id="NewLocation">
+			<div style="display: flex; flex-direction: column; align-items: flex-start;">
+				<div style="display: flex; flex-direction: column; align-items: flex-start;">
+					<label>
+						<input type="radio" name="gender" value="Masculino">
+						Masculino
+					</label>
+					<label>
+						<input type="radio" name="gender" value="Femenino">
+						Femenino
+					</label>
+					<label>
+						<input type="radio" name="gender" value="Otros">
+						Otros
+					</label>
+				</div>
+				<input style="margin-top: 20px; margin-bottom: 20px;" class="radioColor" type="color" placeholder="Introduce tu color favorito" id="NewColor">
+				<label>
+					Es la primera vez que entras a la página?
+				</label>
+				<label for="Si">Si <input type="checkbox" id="NewFirstPurchase"></label>
+				<label for="No">No <input type="checkbox" id="NewFirstPurchase"></label>
+			</div>	
+				<div class="button-container">
+					<a class="buttonSeccion" href="#" onclick="register()">Registrar</a>
+					<a class="buttonSeccion" href="#" onclick="showLogin()">Volver</a>
+				</div>
 			</div>
-	</nav>
-	<div class="contenedor-1">
-		<article class="articulo-1">
-			<section class="section-1">
-				<h2 class="promo-1">Venta de productos economicos y de buena calidad<br>
-				te tenemos grandes ofertas todos los días<br>
-				obtenga todo lo que deseé con un solo click</h2>
-			</section>
-		</article>
-	</div>
-	<div class="destacado">
-		<h1 class="Titulo-1">DESTACADOS</h1>
-		<p class="texto-1">Los productos más vendidos en la semana</p>
-	</div>
+		</div>
+
+	<div id="paginaOculta" style="display: none;">
+        <nav>
+            <p class="Mayor">LOGO</p>
+            <div class="orden">
+                <a href="home.html" class="bloque detallado1">Inicio</a>
+                <a href="productos.html" class="bloque detallado2">Productos</a>
+                <a href="categorias.html" class="bloque detallado3">Categorías</a>
+                <a href="ofertas.html" class="bloque detallado4">Ofertas</a>
+                <a href="Contáctanos.html" class="bloque detallado5">Contáctanos</a>
+            </div>
+        </nav>
+        <div class="contenedor-1">
+            <article class="articulo-1">
+                <section class="section-1">
+                    <h2 class="promo-1">Venta de productos economicos y de buena calidad<br>
+                    te tenemos grandes ofertas todos los días<br>
+                    obtenga todo lo que deseé con un solo click</h2>
+                </section>
+            </article>
+        </div>
+        <div class="destacado">
+            <h1 class="Titulo-1">DESTACADOS</h1>
+            <p class="texto-1">Los productos más vendidos en la semana</p>
+        </div>
 	
 	<div class="destacado-publicidad">
 		<div class="destacados">
 			<article class="Contenedor">
-			<div class="separate-1">
+			<figure class="separate-1">
 				<img class="padding-img" src="IMG/microondas.jpg" width="260px" height="200px" alt="microondas.jpg"/>
+				<figcaption>Esta es la leyenda de la imagen</figcaption>
 				<br>
 				<h1>Microondas</h1>
-			</div> 
+			</figure> 
 			<div class="separate-2">
 				<h2>35$</h2>
 				<p>Microondas marca LG en perfectas condiciones</p>
@@ -48,6 +100,7 @@
 			<article class="Contenedor">
 			<div class="separate-1">
 				<img class="padding-img" src="IMG/tv.jpg" width="260px" height="200px" alt="tv.jpg"/>
+				<figcaption>Esta es la leyenda de la imagen</figcaption>
 				<h1>Televisor</h1>
 			</div>
 			<div class="separate-2">
@@ -61,6 +114,7 @@
 			<article class="Contenedor">
 			<div class="separate-1">
 				<img class="padding-img" src="IMG/caballo.jpg" width="260px" height="200px" alt="caballo.jpg"/>
+				<figcaption>Esta es la leyenda de la imagen</figcaption>
 				<h1>Caballo De Madera</h1>
 			</div>
 			<div class="separate-2">
@@ -72,6 +126,7 @@
 			</article>
 		</div>
 		<div class="publicidad">
+			<figcaption>Esta es la leyenda de la imagen</figcaption>
 		<a href="#"><img src="IMG\burguer.jpg" width="300px" height="150%" alt="Publicidad"/></a>
 		</div>
 	</div>
@@ -79,6 +134,7 @@
 	<div class="articulos-2">
 	<div class="Contenedor-2">
 		<img src="IMG\camiseta_negra.jpg" width="160px" height="200px" alt="camiseta _negra.jpg"/>
+		<figcaption>Esta es la leyenda de la imagen</figcaption>
 		<h1>Camiseta <br> Negra</h1>
 		<h2>5$</h2>
 		<p>Una camiseta negra, bien conservada, perfecta para usarla en el verano.</p>
@@ -89,6 +145,7 @@
 	</div>
 	<div class="Contenedor-2">
 		<img src="IMG\pantalon_jordan.jpg" width="160px" height="200px" alt="patanlon_jordan.jpg"/>
+		<figcaption>Esta es la leyenda de la imagen</figcaption>
 		<h1>Mono <br> Jordan</h1>
 		<h2>10$</h2>
 		<p>Mono de tela sueve, marca Jordan, tiene un diseño blanco con negro </p>
@@ -99,6 +156,7 @@
 	</div>
 	<div class="Contenedor-2">
 		<img src="IMG\sueter_negro.jpg" width="160px" height="200px" alt="sueter_negro.jpg"/>
+		<figcaption>Esta es la leyenda de la imagen</figcaption>
 		<h1>Suéter <br> Negro</h1>
 		<h2>20$</h2>
 		<p>Un suéter negro, bien conservado, perfecta para usarlo en el invierno.</p>
@@ -109,6 +167,7 @@
 	</div>
 	<div class="Contenedor-2">
 		<img src="IMG\botas_amarillas.jpg" width="160px" height="200px" alt="botas_amarillas.jpg"/>
+		<figcaption>Esta es la leyenda de la imagen</figcaption>
 		<h1>Botas <br> Amarillas</h1>
 		<h2>25$</h2>
 		<p>Botas todo terreno, talla 40, perctamente cuidadas, ideales para escalar montañas.</p>
@@ -119,6 +178,7 @@
 	</div>
 		<div class="Contenedor-2">
 		<img src="IMG\camiseta_negra.jpg" width="160px" height="200px" alt="camiseta _negra.jpg"/>
+		<figcaption>Esta es la leyenda de la imagen</figcaption>
 		<h1>Camiseta <br> Negra</h1>
 		<h2>5$</h2>
 		<p>Una camiseta negra, bien conservada, perfecta para usarla en el verano.</p>
@@ -129,6 +189,7 @@
 	</div>
 	<div class="Contenedor-2">
 		<img src="IMG\pantalon_jordan.jpg" width="160px" height="200px" alt="patanlon_jordan.jpg"/>
+		<figcaption>Esta es la leyenda de la imagen</figcaption>
 		<h1>Mono <br> Jordan</h1>
 		<h2>10$</h2>
 		<p>Mono de tela sueve, marca Jordan, tiene un diseño blanco con negro </p>
@@ -139,6 +200,7 @@
 	</div>
 	<div class="Contenedor-2">
 		<img src="IMG\sueter_negro.jpg" width="160px" height="200px" alt="sueter_negro.jpg"/>
+		<figcaption>Esta es la leyenda de la imagen</figcaption>
 		<h1>Suéter <br> Negro</h1>
 		<h2>20$</h2>
 		<p>Un suéter negro, bien conservado, perfecta para usarlo en el invierno.</p>
@@ -149,6 +211,7 @@
 	</div>
 	<div class="Contenedor-2">
 		<img src="IMG\botas_amarillas.jpg" width="160px" height="200px" alt="botas_amarillas.jpg"/>
+		<figcaption>Esta es la leyenda de la imagen</figcaption>
 		<h1>Botas <br> Amarillas</h1>
 		<h2>25$</h2>
 		<p>Botas todo terreno, talla 40, perctamente cuidadas, ideales para escalar montañas.</p>
@@ -159,6 +222,7 @@
 	</div>
 	<div class="Contenedor-2">
 		<img src="IMG\microondas.jpg" width="160px" height="200px" alt="microondas.jpg"/>
+		<figcaption>Esta es la leyenda de la imagen</figcaption>
 		<h1>Microondas</h1>
 		<h2>35$</h2>
 		<p>Microondas marca LG en perfectas condiciones</p>
@@ -170,6 +234,7 @@
 	
 	<div class="Contenedor-2">
 		<img src="IMG\tv.jpg" width="160px" height="200px" alt="tv.jpg"/>
+		<figcaption>Esta es la leyenda de la imagen</figcaption>
 		<h1>Televisor</h1>
 		<h2>70$</h2>
 		<p>Televisor pantalla plana sankey con conexión hdmi</p>
@@ -181,6 +246,7 @@
 	
 	<div class="Contenedor-2">
 		<img src="IMG\caballo.jpg" width="160px" height="200px" alt="caballo.jpg"/>
+		<figcaption>Esta es la leyenda de la imagen</figcaption>
 		<h1>Caballo De Madera</h1>
 		<h2>5$</h2>
 		<p>Un caballo de madera pequeño, bien conservado y en perfectas condiciones</p>
@@ -211,6 +277,7 @@
 		<a href=""><img src="IMG\Twitter.png" width="50px" height="50px" alt="Twitter"/></a>
 	</div>	
 </footer>
-<script src="js.js" ></script>
+</div>
+<script src="Js/script.js" ></script>
 </body>
 </html>
