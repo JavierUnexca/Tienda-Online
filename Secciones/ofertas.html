@@ -1,19 +1,26 @@
 <html>
 <head>
 <title>Compras Online/Ofertas</title>
-<link rel="stylesheet" href="ofertas.css">
+<link rel="stylesheet" href="/Styles/ofertas.css">
 </head>
 <body>
-<nav>
-	<p class="Mayor">LOGO</p>
-	<div class="orden">
-		<a href="index.html" class="bloque detallado1">Inicio</a>
-		<a href="productos.html" class="bloque detallado2">Productos</a>
-		<a href="categorias.html" class="bloque detallado3">Categorias</a>
-		<a href="ofertas.html" class="bloque detallado4">Ofertas</a>
-		<a href="Contáctanos.html" class="bloque detallado5">Contáctanos</a>
-	</div>
-</nav>
+	<nav class="navbar">
+		<div class="dropdown">
+			<button class="dropdown-button" onclick="toggleDropdown()"><i class="fa-solid fa-user" style="color: rgb(255, 235, 210);"></i></button>
+			<div class="dropdown-content" id="dropdownContent">
+				<div><h3>Usuario: <span id="displayUser"></span></h3></div>
+				<div><h3>Ubicación: <span id="displayLocation"></span></h3></div>
+				<div><h3>Género: <span id="displayGender"></span></h3></div>
+			</div>
+		</div>
+		<div class="orden">
+			<a href="/index.html" class="bloque detallado1">Inicio</a>
+			<a href="/Secciones/productos.html" class="bloque detallado2">Productos</a>
+			<a href="/Secciones/categorias.html" class="bloque detallado3">Categorías</a>
+			<a href="/Secciones/ofertas.html" class="bloque detallado4">Ofertas</a>
+			<a href="/Secciones/Contáctanos.html" class="bloque detallado5">Contáctanos</a>
+		</div>
+	</nav>
 
 <div class="destacado">
 	<h1 class="Texto-1">Ofertas de la semana</h1>
@@ -28,7 +35,7 @@
 		<br>
 		EN CALZADO PARA HOMBRES</h1>
 		<p>Mira nuestros calzados para hombres con sus promociones del 30%</p>
-		<img src="IMG/zapato_masculino.png" width="100px" height="100px" alt=""/>
+		<img src="/IMG/zapato_masculino.png" width="100px" height="100px" alt=""/>
 	</article>
 	</a>
 	
@@ -39,7 +46,7 @@
 		<br>
 		EN PANTALONES PARA HOMBRES</h1>
 		<p>Mira nuestros pantalones para hombres con sus promociones del 50%</p>
-		<img src="IMG/pantalon.png" width="100px" height="100px" alt=""/>
+		<img src="/IMG/pantalon.png" width="100px" height="100px" alt=""/>
 	</article>
 	</a>
 	
@@ -50,7 +57,7 @@
 		<br>
 		EN MAQUILLAJE</h1>
 		<p>Mira nuestros productos de maquijalle con sus promociones del 20%</p>
-		<img src="IMG/maquillaje.png" width="100px" height="100px" alt=""/>
+		<img src="/IMG/maquillaje.png" width="100px" height="100px" alt=""/>
 	</article>
 	</a>
 	
@@ -61,7 +68,7 @@
 		<br>
 		EN VIDEOJUEGOS PARA PC</h1>
 		<p>Mira nuestros productos de videojuegos con sus promociones del 10%</p>
-		<img src="IMG/pc.png" width="100px" height="100px" alt=""/>
+		<img src="/IMG/pc.png" width="100px" height="100px" alt=""/>
 	</article>
 	</a>
 </div>
@@ -81,11 +88,13 @@
 	<p class="final">Todos los productos vistos no son reales. 
 	Todo el contenido de la página es solo de exhibición sin fines de lucro<p>
 	<div class="sociales">
-		<a href=""><img src="IMG\Faceboock.png" width="50px" height="50px" alt="Faceboock"/></a>
-		<a href=""><img src="IMG\Gmail.png" width="50px" height="50px" alt="Gmail"/></a>
-		<a href=""><img src="IMG\Instragram.png" width="50px" height="50px" alt="Intragram"/></a>
-		<a href=""><img src="IMG\Twitter.png" width="50px" height="50px" alt="Twitter"/></a>
+		<a href=""><img src="/IMG/Faceboock.png" width="50px" height="50px" alt="Faceboock"/></a>
+		<a href=""><img src="/IMG/Gmail.png" width="50px" height="50px" alt="Gmail"/></a>
+		<a href=""><img src="/IMG/Instragram.png" width="50px" height="50px" alt="Intragram"/></a>
+		<a href=""><img src="/IMG/Twitter.png" width="50px" height="50px" alt="Twitter"/></a>
 	</div>	
 </footer>
+<script src="/Js/script.js" ></script>
+<script src="https://kit.fontawesome.com/ed22dd3109.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -2,19 +2,26 @@
 <html>
 <head>
 	<title>Compras Online/Productos</title>
-	<link rel="stylesheet" href="productos.css">
+	<link rel="stylesheet" href="/Styles/productos.css">
 <head>
 <body>
-<nav>
-	<a href="#" class="Mayor">LOGO</a>
-	<div class="orden">
-		<a href="index.html" class="bloque detallado1">Inicio</a>
-		<a href="productos.html" class="bloque detallado2">Productos</a>
-		<a href="categorias.html" class="bloque detallado3">Categorías</a>
-		<a href="ofertas.html" class="bloque detallado4">Ofertas</a>
-		<a href="Contáctanos.html" class="bloque detallado5">Contáctanos</a>
-	</div>
-</nav>
+	<nav class="navbar">
+		<div class="dropdown">
+			<button class="dropdown-button" onclick="toggleDropdown()"><i class="fa-solid fa-user" style="color: rgb(255, 235, 210);"></i></button>
+			<div class="dropdown-content" id="dropdownContent">
+				<div><h3>Usuario: <span id="displayUser"></span></h3></div>
+				<div><h3>Ubicación: <span id="displayLocation"></span></h3></div>
+				<div><h3>Género: <span id="displayGender"></span></h3></div>
+			</div>
+		</div>
+		<div class="orden">
+			<a href="/index.html" class="bloque detallado1">Inicio</a>
+			<a href="/Secciones/productos.html" class="bloque detallado2">Productos</a>
+			<a href="/Secciones/categorias.html" class="bloque detallado3">Categorías</a>
+			<a href="/Secciones/ofertas.html" class="bloque detallado4">Ofertas</a>
+			<a href="/Secciones/Contáctanos.html" class="bloque detallado5">Contáctanos</a>
+		</div>
+	</nav>
 
 <div class="destacado">
 	<h1 class="Texto-1">productos disponibles</h1>
@@ -23,7 +30,7 @@
 
 <div class="padre">
 	<div class="Contenedor ">
-		<img src="IMG\camiseta_negra.jpg" width="160px" height="200px" alt="camiseta _negra.jpg"/>
+		<img src="/IMG/camiseta_negra.jpg" width="160px" height="200px" alt="camiseta _negra.jpg"/>
 		<h1>Camiseta <br> Negra</h1>
 		<h2>5$</h2>
 		<p>Una camiseta negra, bien conservada, perfecta para usarla en el verano.</p>
@@ -33,7 +40,7 @@
 		<button>Comprar</button>
 	</div>
 	<div class="Contenedor">
-		<img src="IMG\pantalon_jordan.jpg" width="160px" height="200px" alt="patanlon_jordan.jpg"/>
+		<img src="/IMG/pantalon_jordan.jpg" width="160px" height="200px" alt="patanlon_jordan.jpg"/>
 		<h1>Mono <br> Jordan</h1>
 		<h2>10$</h2>
 		<p>Mono de tela sueve, marca Jordan, tiene un diseño blanco con negro </p>
@@ -43,7 +50,7 @@
 		<button>Comprar</button>
 	</div>
 	<div class="Contenedor">
-		<img src="IMG\sueter_negro.jpg" width="160px" height="200px" alt="sueter_negro.jpg"/>
+		<img src="/IMG/sueter_negro.jpg" width="160px" height="200px" alt="sueter_negro.jpg"/>
 		<h1>Suéter <br> Negro</h1>
 		<h2>20$</h2>
 		<p>Un suéter negro, bien conservado, perfecta para usarlo en el invierno.</p>
@@ -53,7 +60,7 @@
 		<button>Comprar</button>
 	</div>
 	<div class="Contenedor">
-		<img src="IMG\botas_amarillas.jpg" width="160px" height="200px" alt="botas_amarillas.jpg"/>
+		<img src="/IMG/botas_amarillas.jpg" width="160px" height="200px" alt="botas_amarillas.jpg"/>
 		<h1>Botas <br> Amarillas</h1>
 		<h2>25$</h2>
 		<p>Botas todo terreno, talla 40, perctamente cuidadas, ideales para escalar montañas.</p>
@@ -63,7 +70,7 @@
 		<button>Comprar</button>
 	</div>
 		<div class="Contenedor">
-		<img src="IMG\camiseta_negra.jpg" width="160px" height="200px" alt="camiseta _negra.jpg"/>
+		<img src="/IMG/camiseta_negra.jpg" width="160px" height="200px" alt="camiseta _negra.jpg"/>
 		<h1>Camiseta <br> Negra</h1>
 		<h2>5$</h2>
 		<p>Una camiseta negra, bien conservada, perfecta para usarla en el verano.</p>
@@ -73,7 +80,7 @@
 		<button>Comprar</button>
 	</div>
 	<div class="Contenedor">
-		<img src="IMG\pantalon_jordan.jpg" width="160px" height="200px" alt="patanlon_jordan.jpg"/>
+		<img src="/IMG/pantalon_jordan.jpg" width="160px" height="200px" alt="patanlon_jordan.jpg"/>
 		<h1>Mono <br> Jordan</h1>
 		<h2>10$</h2>
 		<p>Mono de tela sueve, marca Jordan, tiene un diseño blanco con negro </p>
@@ -83,7 +90,7 @@
 		<button>Comprar</button>
 	</div>
 	<div class="Contenedor">
-		<img src="IMG\sueter_negro.jpg" width="160px" height="200px" alt="sueter_negro.jpg"/>
+		<img src="/IMG/sueter_negro.jpg" width="160px" height="200px" alt="sueter_negro.jpg"/>
 		<h1>Suéter <br> Negro</h1>
 		<h2>20$</h2>
 		<p>Un suéter negro, bien conservado, perfecta para usarlo en el invierno.</p>
@@ -93,7 +100,7 @@
 		<button>Comprar</button>
 	</div>
 	<div class="Contenedor">
-		<img src="IMG\botas_amarillas.jpg" width="160px" height="200px" alt="botas_amarillas.jpg"/>
+		<img src="/IMG/botas_amarillas.jpg" width="160px" height="200px" alt="botas_amarillas.jpg"/>
 		<h1>Botas <br> Amarillas</h1>
 		<h2>25$</h2>
 		<p>Botas todo terreno, talla 40, perctamente cuidadas, ideales para escalar montañas.</p>
@@ -103,7 +110,7 @@
 		<button>Comprar</button>
 	</div>
 	<div class="Contenedor 2">
-		<img src="IMG\microondas.jpg" width="160px" height="200px" alt="microondas.jpg"/>
+		<img src="/IMG/microondas.jpg" width="160px" height="200px" alt="microondas.jpg"/>
 		<h1>Microondas</h1>
 		<h2>35$</h2>
 		<p>Microondas marca LG en perfectas condiciones</p>
@@ -114,7 +121,7 @@
 	</div>
 	
 	<div class="Contenedor 2">
-		<img src="IMG\tv.jpg" width="160px" height="200px" alt="tv.jpg"/>
+		<img src="/IMG/tv.jpg" width="160px" height="200px" alt="tv.jpg"/>
 		<h1>Televisor</h1>
 		<h2>70$</h2>
 		<p>Televisor pantalla plana sankey con conexión hdmi</p>
@@ -125,7 +132,7 @@
 	</div>
 	
 	<div class="Contenedor 2">
-		<img src="IMG\caballo.jpg" width="160px" height="200px" alt="caballo.jpg"/>
+		<img src="/IMG/caballo.jpg" width="160px" height="200px" alt="caballo.jpg"/>
 		<h1>Caballo De Madera</h1>
 		<h2>5$</h2>
 		<p>Un caballo de madera pequeño, bien conservado y en perfectas condiciones</p>
@@ -151,11 +158,13 @@
 	<p class="final">Todos los productos vistos no son reales. 
 	Todo el contenido de la página es solo de exhibición sin fines de lucro<p>
 		<div class="sociales">
-		<a href=""><img src="IMG\Faceboock.png" width="50px" height="50px" alt="Faceboock"/></a>
-		<a href=""><img src="IMG\Gmail.png" width="50px" height="50px" alt="Gmail"/></a>
-		<a href=""><img src="IMG\Instragram.png" width="50px" height="50px" alt="Intragram"/></a>
-		<a href=""><img src="IMG\Twitter.png" width="50px" height="50px" alt="Twitter"/></a>
+		<a href=""><img src="/IMG/Faceboock.png" width="50px" height="50px" alt="Faceboock"/></a>
+		<a href=""><img src="/IMG/Gmail.png" width="50px" height="50px" alt="Gmail"/></a>
+		<a href=""><img src="/IMG/Instragram.png" width="50px" height="50px" alt="Intragram"/></a>
+		<a href=""><img src="/IMG/Twitter.png" width="50px" height="50px" alt="Twitter"/></a>
 	</div>
 </footer>
+<script src="/Js/script.js" ></script>
+<script src="https://kit.fontawesome.com/ed22dd3109.js" crossorigin="anonymous"></script>
 </body>
 </html>

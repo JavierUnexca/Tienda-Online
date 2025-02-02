@@ -2,22 +2,29 @@
 <html>
 <head>
 <title>Compras Online/Contactanos</title>
-<link rel="stylesheet" href="Contactanos.css"/>
+<link rel="stylesheet" href="/Styles/Contactanos.css"/>
 </head>
 <body>
-	<nav>
-		<p class="Mayor">LOGO</p>
-			<div class="orden">
-				<a href="index.html" class="bloque detallado1">Inicio</a>
-				<a href="productos.html" class="bloque detallado2">Productos</a>
-				<a href="categorias.html" class="bloque detallado3">Categorías</a>
-				<a href="ofertas.html" class="bloque detallado4">Ofertas</a>
-				<a href="Contáctanos.html" class="bloque detallado5">Contáctanos</a>
+	<nav class="navbar">
+		<div class="dropdown">
+			<button class="dropdown-button" onclick="toggleDropdown()"><i class="fa-solid fa-user" style="color: rgb(255, 235, 210);"></i></button>
+			<div class="dropdown-content" id="dropdownContent">
+				<div><h3>Usuario: <span id="displayUser"></span></h3></div>
+				<div><h3>Ubicación: <span id="displayLocation"></span></h3></div>
+				<div><h3>Género: <span id="displayGender"></span></h3></div>
 			</div>
+		</div>
+		<div class="orden">
+			<a href="/index.html" class="bloque detallado1">Inicio</a>
+			<a href="/Secciones/productos.html" class="bloque detallado2">Productos</a>
+			<a href="/Secciones/categorias.html" class="bloque detallado3">Categorías</a>
+			<a href="/Secciones/ofertas.html" class="bloque detallado4">Ofertas</a>
+			<a href="/Secciones/Contáctanos.html" class="bloque detallado5">Contáctanos</a>
+		</div>
 	</nav>
 	<div class="divisiones">
 		<div class="cuadro">
-			<a href=""><img class="imagen" src="IMG/Faceboock.png" width="150px" height="160px" alt="Faceboock.png"/></a>
+			<a href=""><img class="imagen" src="/IMG/Faceboock.png" width="150px" height="160px" alt="Faceboock.png"/></a>
 			<id class="separate">
 				<p class="texto"> En nuestra página encontrarás promociones 
 				<br> 
@@ -33,7 +40,7 @@
 		</div>
 		
 		<div class="cuadro">
-		<a href=""><img class="imagen" src="IMG/Gmail.png" width="150px" height="160px" alt="Gmail.png"/></a>
+		<a href=""><img class="imagen" src="/IMG/Gmail.png" width="150px" height="160px" alt="Gmail.png"/></a>
 			<id class="separate">
 				<p class="texto">Si deseas contactar directamente
 				<br> 
@@ -45,7 +52,7 @@
 		</div>
 		
 		<div class="cuadro">
-		<a href="#"><img class="imagen" src="IMG/Instragram.png" width="150px" height="160px" alt="Instragram.png"/></a>
+		<a href="#"><img class="imagen" src="/IMG/Instragram.png" width="150px" height="160px" alt="Instragram.png"/></a>
 			<id class="separate">
 				<p class="texto"> En nuestra página encontrarás promociones 
 				<br> 
@@ -61,7 +68,7 @@
 		</div>
 		
 		<div class="cuadro">
-		<a href=""><img class="imagen" src="IMG/Twitter.png" width="150px" height="160px" alt="Twitter.png"/></a>
+		<a href=""><img class="imagen" src="/IMG/Twitter.png" width="150px" height="160px" alt="Twitter.png"/></a>
 			<id class="separate">
 				<p class="texto"> En nuestra página encontrarás promociones 
 				<br> 
@@ -80,11 +87,13 @@
 	<p class="final">Todos los derechos reservados 2023</p>
 	<p class="final">Pueden contarnos en nuestras redes<p>
 	<div class="sociales">
-		<a href=""><img src="IMG\Faceboock.png" width="50px" height="50px" alt="Faceboock"/></a>
-		<a href=""><img src="IMG\Gmail.png" width="50px" height="50px" alt="Gmail"/></a>
-		<a href=""><img src="IMG\Instragram.png" width="50px" height="50px" alt="Intragram"/></a>
-		<a href=""><img src="IMG\Twitter.png" width="50px" height="50px" alt="Twitter"/></a>
+		<a href=""><img src="/IMG/Faceboock.png" width="50px" height="50px" alt="Faceboock"/></a>
+		<a href=""><img src="/IMG/Gmail.png" width="50px" height="50px" alt="Gmail"/></a>
+		<a href=""><img src="/IMG/Instragram.png" width="50px" height="50px" alt="Intragram"/></a>
+		<a href=""><img src="/IMG/Twitter.png" width="50px" height="50px" alt="Twitter"/></a>
 	</div>	
 </footer>
+<script src="/Js/script.js" ></script>
+<script src="https://kit.fontawesome.com/ed22dd3109.js" crossorigin="anonymous"></script>
 </body>
 <html>

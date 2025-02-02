@@ -1,3 +1,4 @@
+/* Estilos generales para body y html */
 body, html {
     height: 100%;
     margin: 0;
@@ -6,6 +7,7 @@ body, html {
     align-items: center;
 }
 
+/* Estilos para el contenedor principal */
 .container {
     display: flex;
     justify-content: center;
@@ -14,19 +16,23 @@ body, html {
     width: 100%;
 }
 
+/* Estilos para el formulario de login */
 #Login {
     height: 400px;
     width: 400px;
     background-color: #273248;
-	border-radius: 20px;
-}
-#Register {
-	height: 550px;
-	width: 400px;
-	background-color: #273248;
-	border-radius: 20px;
+    border-radius: 20px;
 }
 
+/* Estilos para el formulario de registro */
+#Register {
+    height: 550px;
+    width: 400px;
+    background-color: #273248;
+    border-radius: 20px;
+}
+
+/* Estilos para la página oculta */
 #paginaOculta {
     display: none;
     width: 100%;
@@ -34,10 +40,11 @@ body, html {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #fff; /* Puedes cambiar el color de fondo si es necesario */
-    overflow-y: auto; /* Para permitir el desplazamiento si el contenido es largo */
+    background-color: #fff; 
+    overflow-y: auto; 
 }
 
+/* Estilos para el título elegante */
 .elegant-title {
     color: aliceblue;
     font-family: 'Georgia', serif;
@@ -46,12 +53,15 @@ body, html {
     margin-bottom: 20px;
 }
 
+/* Estilos para el color del radio */
 .radioColor {
-	color: aliceblue;
-	font-family: 'Georgia', serif;
-	font-size: 1.2em;
-	margin-bottom: 10px;
+    color: aliceblue;
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
+
+/* Estilos para los inputs modernos */
 .modern-input {
     width: 80%;
     padding: 10px;
@@ -69,14 +79,16 @@ body, html {
     outline: none;
 }
 
+/* Estilos para el contenedor de botones */
 .button-container {
     margin: 10px;
     display: flex;
     justify-content: center;
 }
 
+/* Estilos para los botones de sección */
 .buttonSeccion {
-	margin: 20px;
+    margin: 20px;
     color: aliceblue;
     text-decoration: none;
     padding: 10px 20px;
@@ -90,18 +102,78 @@ body, html {
     color: #273248;
     transform: scale(1.05);
 }
-/*Login//////////////////////////////*/
-p{
-	text-indent: 25px;
+
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-
-nav{
-	background:#273248;
-	padding:20px;
-	margin:-10px -8px 15px -10px;
-	font-family:"usuzi", times, serif;
+/* Estilos para el dropdown */
+.dropdown {
+    position: relative;
 }
+
+.dropdown-button {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    width: 50px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content div:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos para la orden */
+.orden {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.orden a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.orden a:hover {
+    background-color: #575757;
+}
+
+/* Estilos para las figuras */
 figure {
     text-align: center; /* Centrar la imagen y la leyenda */
     margin: 20px; /* Margen alrededor del figure */
@@ -112,255 +184,310 @@ figcaption {
     color: #666; /* Color de la letra de la leyenda */
     margin-top: 10px; /* Espacio entre la imagen y la leyenda */
 }
-		.Mayor{
-					display:inline-block;
-					color:#ffebd2;
-					text-decoration:none;
-					font-size:20px;
-					margin:-5px;
-					cursor:default;
-		        }		
-		.orden{
-			display:flex;
-			justify-content:flex-end;
-		}
-				.bloque{
-					display:flex;
-					color:#ffebd2;
-					text-decoration:none;
-					margin-right:8px;
-					font-size:20px;
-					margin:-16px 10px 0px 0px;
-				}
-				.bloque:hover{
-					color:white;
-					font-size:30px;
-				}
-.contenedor-1{
-	display:flex;
-	justify-content:center;
-	cursor:default;
-}				
-		.section-1{
-			background:#273248;
-			padding:30px 70px 30px 70px;
-			border-radius:100px;
-			border:2px solid black;
-		}	
-				.promo-1{
-					color:white;
-					margin:2px;
-					text-align:center;
-					font-family:"Alone On Earth", times, serif;
-				}	
-.destacado{
-	margin-top:10px;
-	border:3px solid black;
-	cursor:default;
-}				
-		.Titulo-1{
-			font-family:"Alone On Earth", times, serif;
-			text-align:center;
-		}
-		.texto-1{
-			text-align:center;
-					font-family:"Alone On Earth", times, serif;
-		}
-		.destacado-publicidad{
-			margin-top:10px;
-			border:3px solid black;
-			display:flex;
-			flex-direction:row;
-		}
-				.destacados{
-					display:flex;
-					flex-direction:column;
-					align-items:center;
-					font-family:"Alone On Earth", times, serif;
-					flex:10 3;
-				}
-					.Contenedor{
-						display:flex;
-						background:#273248;
-						margin-top:15px;
-						margin-bottom:15px;
-						width:90%;
-						color:white;
-						border-radius:20px;
-						text-align:center;
-						}
-						.separate-1{
-						display:flex;
-						flex:5 3;
-						text-align:center;
-						flex-direction:column;
-						align-items:center;
-						cursor:default;
-					}
-					.separate-2{
-						display:flex;
-						flex:6 1;
-						flex-direction:column;
-						align-items:center;
-						font-size:20px;
-						cursor:default;
-					}
-						img{
-							margin-top:15px;
-							border-radius:15px;
-						}
-							.padding-img{
-								padding:15px;
-							}
-						h2{
-							color:#73f6a6;
-						}
-						button{
-							margin-bottom:10px;
-							width:15%;
-						}
-				.publicidad{
-					display:flex;
-					flex-direction:column;
-					align-items:center;
-					flex:3 5;
-					margin:25px 20px 25px 0px
-				}	
-.articulos-2{
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:center;
-	font-family:"Alone On Earth", times, serif;
-}			
-			.Contenedor-2{
-				background:#273248;
-				margin:25px 15px 15px 15px;
-				width:250px;
-				text-align:center;
-				font-size:18px;
-				color:white;
-				border-radius:20px;
-			}
-				button{
-					width:35%;
-				}
-.atras-siguiente{
-	display:flex;
-	justify-content:center;
-}				
-		.pagina{
-			margin-top:10px;
-			margin-left:10px;
-			text-decoration:none;
-			color:blue;
-			font-size:20px;
-		}
-footer{
-	background:#5d5e59;
-	padding:0px 5px 10px 15px;
-	margin:5px -5px -10px -25px;	
+
+/* Estilos para el texto mayor */
+.Mayor {
+    display: inline-block;
+    color: #ffebd2;
+    text-decoration: none;
+    font-size: 20px;
+    margin: -5px;
+    cursor: default;
 }
-		.final{
-			text-align: center;
-			color:white;
-		}
-.sociales{
-		display:flex;
-		justify-content:center;
-	}	
-@media all and (max-width:760px){	
-	nav{
-		background:#273248;
-		padding:20px;
-		margin:-10px -8px 15px -10px;
-		font-family:"usuzi", times, serif;
-	}
-			.Mayor{
-						display:inline-block;
-						color:#ffebd2;
-						text-decoration:none;
-						font-size:15px;
-						margin:-4px;
-					}		
-			.orden{
-				display:flex;
-				justify-content:flex-end;
-			}
-					.bloque{
-						display:flex;
-						color:#ffebd2;
-						text-decoration:none;
-						margin-right:8px;
-						font-size:15px;
-						margin:-12px 10px 0px 0px;
-					}
-					.bloque:hover{
-						font-size:15px;
-					}
-	.destacado-publicidad{
-			margin-top:10px;
-			border:3px solid black;
-			display:flex;
-			flex-direction:column;
-			align-items:center;
-		}
-				.padding-img{
-							padding:0px;
-						}
-		.destacado{
-			flex-direction:column;
-			align-items:center;
-		}
-		.Contenedor{
-			display:flex;
-			flex-direction:column;
-		}
-}	
-@media all and (max-width:590px){
-	nav{
-	background:#273248;
-	padding:20px;
-	margin:10px 8px 15px 10px;
-	border-radius:15px;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	font-family:"usuzi", times, serif;
+
+/* Estilos para el contenedor principal */
+.contenedor-1 {
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    margin-top: 100px;
 }
-		.Mayor{
-			color:#ffebd2;
-			text-decoration:none;
-			font-size:30px;
-		}
-			.orden{
-			display:flex;
-			flex-direction:column;
-			align-items:center;
-			font-family:"usuzi", times, serif;
-		}
-		.bloque{
-			background:white;
-			padding:5px 20px 5px 20px;
-			color:#273248;
-			text-decoration:none;
-			margin-top: 5px;
-			font-size:15px;
-			border: 2px solid black;
-		}
-		.bloque:hover{
-					color:#273248;
-					font-size:15px;
-				}
-				.detallado2{
-					padding:5px 13px 5px 13px;
-				}
-				.detallado3{
-					padding:5px 18px 5px 18px;
-				}
-				.detallado4{
-					padding:5px 40px 5px 40px;
-				}
-				.detallado5{
-					padding:5px 30px 5px 30px;
-				}
-}			
+
+/* Estilos para la sección principal */
+.section-1 {
+    background: #273248;
+    padding: 30px 70px;
+    border-radius: 100px;
+    border: 2px solid black;
+}
+
+/* Estilos para la promoción */
+.promo-1 {
+    color: white;
+    margin: 2px;
+    text-align: center;
+    font-family: "Alone On Earth", times, serif;
+}
+
+/* Estilos para el destacado */
+.destacado {
+    margin-top: 10px;
+    border: 3px solid black;
+    cursor: default;
+}
+
+/* Estilos para el título */
+.Titulo-1 {
+    font-family: "Alone On Earth", times, serif;
+    text-align: center;
+}
+
+/* Estilos para el texto */
+.texto-1 {
+    text-align: center;
+    font-family: "Alone On Earth", times, serif;
+}
+
+/* Estilos para la publicidad destacada */
+.destacado-publicidad {
+    margin-top: 10px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Estilos para los destacados */
+.destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Alone On Earth", times, serif;
+    flex: 10 3;
+}
+
+/* Estilos para el contenedor */
+.Contenedor {
+    display: flex;
+    background: #273248;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 90%;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Estilos para la primera separación */
+.separate-1 {
+    display: flex;
+    flex: 5 3;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+}
+
+/* Estilos para la segunda separación */
+.separate-2 {
+    display: flex;
+    flex: 6 1;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    cursor: default;
+}
+
+/* Estilos para las imágenes */
+img {
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+/* Estilos para el padding de las imágenes */
+.padding-img {
+    padding: 15px;
+}
+
+/* Estilos para los encabezados */
+h2 {
+    color: #73f6a6;
+}
+
+/* Estilos para los botones */
+button {
+    margin-bottom: 10px;
+    width: 15%;
+}
+
+/* Estilos para la publicidad */
+.publicidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3 5;
+    margin: 25px 20px 25px 0px;
+}
+
+/* Estilos para los artículos */
+.articulos-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Alone On Earth", times, serif;
+}
+
+/* Estilos para el contenedor de artículos */
+.Contenedor-2 {
+    background: #273248;
+    margin: 25px 15px 15px 15px;
+    width: 250px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+}
+
+/* Estilos para los botones */
+button {
+    width: 35%;
+}
+
+/* Estilos para la navegación de páginas */
+.atras-siguiente {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para las páginas */
+.pagina {
+    margin-top: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: #5d5e59;
+    padding: 0px 5px 10px 15px;
+    margin: 5px -5px -10px -25px;
+}
+
+/* Estilos para el texto del pie de página */
+.final {
+    text-align: center;
+    color: white;
+}
+
+/* Estilos para las redes sociales */
+.sociales {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos responsivos para pantallas menores a 760px */
+@media all and (max-width: 760px) {
+    nav {
+        background: #273248;
+        padding: 20px;
+        margin: -10px -8px 15px -10px;
+        font-family: "usuzi", times, serif;
+    }
+
+    .Mayor {
+        display: inline-block;
+        color: #ffebd2;
+        text-decoration: none;
+        font-size: 15px;
+        margin: -4px;
+    }
+
+    .orden {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .bloque {
+        display: flex;
+        color: #ffebd2;
+        text-decoration: none;
+        margin-right: 8px;
+        font-size: 15px;
+        margin: -12px 10px 0px 0px;
+    }
+
+    .bloque:hover {
+        font-size: 15px;
+    }
+
+    .destacado-publicidad {
+        margin-top: 10px;
+        border: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .padding-img {
+        padding: 0px;
+    }
+
+    .destacado {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Estilos responsivos para pantallas menores a 590px */
+@media all and (max-width: 590px) {
+    nav {
+        background: #273248;
+        padding: 20px;
+        margin: 10px 8px 15px 10px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "usuzi", times, serif;
+    }
+
+    .Mayor {
+        color: #ffebd2;
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    .orden {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "usuzi", times, serif;
+    }
+
+    .bloque {
+        background: white;
+        padding: 5px 20px;
+        color: #273248;
+        text-decoration: none;
+        margin-top: 5px;
+        font-size: 15px;
+        border: 2px solid black;
+    }
+
+    .bloque:hover {
+        color: #273248;
+        font-size: 15px;
+    }
+
+    .detallado2 {
+        padding: 5px 13px;
+    }
+
+    .detallado3 {
+        padding: 5px 18px;
+    }
+
+    .detallado4 {
+        padding: 5px 40px;
+    }
+
+    .detallado5 {
+        padding: 5px 30px;
+    }
+}
