@@ -35,6 +35,7 @@ function logout() {
     localStorage.setItem('isLoggedIn', JSON.stringify(isLoggedIn));
     document.getElementById('paginaOculta').style.display = 'none';
     document.getElementById('loginContainer').style.display = 'flex';
+    window.location.href = 'index.html'; // Redirige a la página de inicio de sesión
 }
 
 function showRegister() {
@@ -53,6 +54,7 @@ function register() {
     const newLocation = document.getElementById('NewLocation').value;
     const newColor = document.getElementById('NewColor').value;
     const newFirstPurchase = document.getElementById('NewFirstPurchase').checked;
+    const newCountry = document.getElementById('NewCountry').value;
     const genderElements = document.getElementsByName('gender');
     let newGender = '';
 
@@ -63,8 +65,13 @@ function register() {
         }
     }
 
-    if (newUsuario === '' || newPassword === '' || newLocation === '' || newGender === '' || newColor === '') {
+    if (newUsuario === '' || newPassword === '' || newLocation === '' || newGender === '' || newColor === '' || newCountry === '') {
         alert('Por favor, llena todos los campos');
+        return;
+    }
+
+    const confirmMessage = `Nombre de usuario: ${newUsuario}\nContraseña: ${newPassword}`;
+    if (!confirm(confirmMessage)) {
         return;
     }
 
@@ -101,7 +108,17 @@ function displayUserData() {
     document.getElementById('displayGender').innerText = registeredGender;
 }
 
-// Llama a displayUserData cuando la página se carga para mostrar los datos del usuario
+// Funciones para cambiar el color de fondo y convertir texto a mayúsculas
+function handleFocus(event) {
+    event.target.style.backgroundColor = '#e0e0e0';
+}
+
+function handleBlur(event) {
+    event.target.style.backgroundColor = '';
+    event.target.value = event.target.value.toUpperCase();
+}
+
+// Añadir eventos a los elementos del formulario
 window.onload = function() {
     if (isLoggedIn) {
         displayUserData();
@@ -111,4 +128,34 @@ window.onload = function() {
         document.getElementById('paginaOculta').style.display = 'none';
         document.getElementById('loginContainer').style.display = 'flex';
     }
+
+    const inputs = document.querySelectorAll('input[type="text"], input[type="password"], textarea');
+    inputs.forEach(input => {
+        input.addEventListener('focus', handleFocus);
+        input.addEventListener('blur', handleBlur);
+    });
+
+    // Mostrar la fecha del sistema y la fecha de la última modificación de la página
+    const currentDate = new Date();
+    const lastModified = document.lastModified;
+    document.getElementById('currentDate').innerText = `Fecha actual: ${currentDate.toLocaleDateString()}`;
+    document.getElementById('lastModified').innerText = `Última modificación: ${lastModified}`;
+
+    // Mostrar el nombre del navegador y la versión
+    let browserInfo = '';
+    const userAgent = navigator.userAgent;
+    if (userAgent.indexOf('OPR') !== -1) {
+        browserInfo = `Opera ${userAgent.match(/OPR\/(\d+\.\d+)/)[1]}`;
+    } else if (userAgent.indexOf('Chrome') !== -1) {
+        browserInfo = `Chrome ${userAgent.match(/Chrome\/(\d+\.\d+)/)[1]}`;
+    } else if (userAgent.indexOf('Firefox') !== -1) {
+        browserInfo = `Firefox ${userAgent.match(/Firefox\/(\d+\.\d+)/)[1]}`;
+    } else if (userAgent.indexOf('Safari') !== -1) {
+        browserInfo = `Safari ${userAgent.match(/Version\/(\d+\.\d+)/)[1]}`;
+    } else if (userAgent.indexOf('MSIE') !== -1 || !!document.documentMode) {
+        browserInfo = `Edg ${userAgent.match(/MSIE (\d+\.\d+)/)[1]}`;
+    } else {
+        browserInfo = `${navigator.appName} ${navigator.appVersion}`;
+    }
+    document.getElementById('browserInfo').innerText = `Navegador: ${browserInfo}`;
 };

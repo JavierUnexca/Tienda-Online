@@ -5,6 +5,11 @@
 <title>Compras Online</title> 
 </head>
 <body>
+	<header>
+        <div id="currentDate"></div>
+        <div id="lastModified"></div>
+    </header>
+
 	<div class="container" id="loginContainer">
         <div id="Login">
             <div style="display: flex; flex-direction: column; align-items: center; margin-top: 50px;">
@@ -20,40 +25,50 @@
     </div>
 
     <div class="container" id="registerContainer" style="display: none;">
-        <div id="Register">
-			<div style="display: flex; flex-direction: column; align-items: center;">
-				<h1 class="elegant-title">Registrarse</h1>
-				<input class="modern-input" type="text" placeholder="Agrega tu nombre de usuario" id="NewUsuario">
-				<input class="modern-input" type="password" placeholder="Introduce tu contraseña" id="NewPassword">
-				<input class="modern-input" type="text" placeholder="Introduce tu ubicación" id="NewLocation">
-				
-				<div style="display: flex; flex-direction: column; align-items: flex-start;">
-					<label>
-						<input type="radio" name="gender" value="Masculino">
-						Masculino
-					</label>
-					<label>
-						<input type="radio" name="gender" value="Femenino">
-						Femenino
-					</label>
-					<label>
-						<input type="radio" name="gender" value="Otros">
-						Otros
-					</label>
-				</div>
-				
-				<input class="modern-input" type="color" placeholder="Introduce tu color favorito" id="NewColor">
-				<label>
-					<input type="checkbox" id="NewFirstPurchase">
-					Es la primera vez que entras a la página?
-				</label>
-				
-				<div class="button-container">
-					<a class="buttonSeccion" href="#" onclick="register()">Registrar</a>
-					<a class="buttonSeccion" href="#" onclick="showLogin()">Volver</a>
-				</div>
-			</div>
-		</div>
+		<div id="Register">
+            <div style="display: flex; flex-direction: column; align-items: center; margin-top: -10px;">
+                <h1 class="elegant-title">Registrarse</h1>
+                <input class="modern-input" type="text" placeholder="Agrega tu nombre de usuario" id="NewUsuario">
+                <input class="modern-input" type="password" placeholder="Introduce tu contraseña" id="NewPassword">
+                <input class="modern-input" type="text" placeholder="Introduce tu ubicación" id="NewLocation">
+                
+                <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                    <label>
+                        <input type="radio" name="gender" value="Masculino">
+                        Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Femenino">
+                        Femenino
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Otros">
+                        Otros
+                    </label>
+                </div>
+                
+                <input style=" width: 10%; height: 20px; margin: 10px;" type="color" placeholder="Introduce tu color favorito" id="NewColor">
+                <label>
+                    <input type="checkbox" id="NewFirstPurchase">
+                    Es la primera vez que entras a la página?
+                </label>
+                
+                <label for="NewCountry">Selecciona tu país:</label>
+                <select id="NewCountry" class="modern-input">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="México">México</option>
+                    <option value="Perú">Perú</option>
+                </select>
+                
+                <div class="button-container">
+                    <a class="buttonSeccion" href="#" onclick="register()">Registrar</a>
+                    <a class="buttonSeccion" href="#" onclick="showLogin()">Volver</a>
+                </div>
+            </div>
+        </div>
 	</div>
 	<div id="paginaOculta" style="display: none;">
         <nav class="navbar">
@@ -285,6 +300,7 @@
 		<a href=""><img src="IMG\Instragram.png" width="50px" height="50px" alt="Intragram"/></a>
 		<a href=""><img src="IMG\Twitter.png" width="50px" height="50px" alt="Twitter"/></a>
 	</div>	
+	<div style="margin-left: 50px;" id="browserInfo"></div>
 </footer>
 </div>
 <script src="Js/script.js" ></script>
